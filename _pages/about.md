@@ -9,7 +9,7 @@ profile:
   image: data_thumbn.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Puck Swildens, Nils Janssen, Luka,</p>
+    <p>Puck Swildens, Nils Janssen, Luka Rekhvia,</p>
     <p>Yente van der Zee, Stan Huynh</p>
     
 
