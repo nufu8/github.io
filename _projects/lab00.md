@@ -147,6 +147,7 @@ def list_primes_two(len_seq):
 print("Prime numbers (using list comprehension):", list_primes_two(100))
 ```
 {% endraw %}
+
 ___
 
 ### Exercise 4
@@ -175,7 +176,6 @@ def isprime(N):
     return True
 ```
 {% endraw %}
-
 
 **Function to generate a list of prime numbers**
 
