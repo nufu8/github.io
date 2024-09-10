@@ -3,12 +3,12 @@ layout: page
 title: Lab 00
 description: MetData's very first lab: Python Basics
 img: assets/img/lab00.png
-importance: 1
+importance: 3
 category: work
 related_publications: true
 ---
 
-For the first week of Metropolitan Data 1 we took a look at the first steps in Python
+For the first week of Metropolitan Data 1 we took a look at the first steps in Python.
 
 ### Exercise 1
 **Write a properly documented function with the following behaviour:**
