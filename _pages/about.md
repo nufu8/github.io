@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Taughtby Hans Hoogenboom at AMS Institute
+subtitle: Taught by Hans Hoogenboom at AMS Institute
 
 profile:
   align: right
