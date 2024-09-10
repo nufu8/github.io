@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Lab 00
-description: MetData's very first lab: Python Basics
+title: "Lab 00"
+description: "MetData's very first lab: Python Basics"
 img: assets/img/lab00.png
 importance: 2
 category: work
