@@ -105,7 +105,7 @@ ___
 1. Using for loops and conditional if statements.
 2. **(Stretch Goal)** Using a list comprehension.  You should be able to do this in one line of code. **Hint:** it might help to look up the function `all()` in the documentation.
 
-### Way 1: Using for loops and conditional if statements.
+**Way 1: Using for loops and conditional if statements.**
 
 {% raw %}
 ```
@@ -125,7 +125,7 @@ def list_primes_one(len_seq):
 ``` 
 {% endraw %}
 
-### Display the prime numbers list
+**Display the prime numbers list**
 
 {% raw %}
 ```
@@ -133,7 +133,7 @@ print("Prime numbers (using for loop):", list_primes_one(100))
 ``` 
 {% endraw %}
 
-### Way 2: Using a list comprehension.
+**Way 2: Using a list comprehension.**
 
 {% raw %}
 ```
@@ -149,7 +149,7 @@ print("Prime numbers (using list comprehension):", list_primes_two(100))
 {% endraw %}
 ___
 
- Exercise 4
+### Exercise 4
 **Write a function to test the "prime-ness" of a number.**
     
 In Exercise 4, above, you wrote code that generated a list of the prime numbers between 1 and 100. Now, write a function called `isprime()` that takes in a positive integer $N$, and determines whether or not it is prime.  Return `True` if it's prime and return `False` if it isn't. Then, using a list comprehension and `isprime()`, create a list `myprimes` that contains all the prime numbers less than 100.  
@@ -177,7 +177,7 @@ def isprime(N):
 {% endraw %}
 
 
-### Function to generate a list of prime numbers
+**Function to generate a list of prime numbers**
 
 {% raw %}
 ```
@@ -189,7 +189,7 @@ def list_primes_two(len_seq):
 ```
 {% endraw %}
 
-### Display the prime numbers less than 100
+**Display the prime numbers less than 100**
 
 {% raw %}
 ```
