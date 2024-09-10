@@ -2,24 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Blank
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: data_thumbn.png
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Puck Swildens, Nils Janssen, Luka,</p>
+    <p>Yente van der Zee, Stan Huynh</p>
+    
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi there! We’re a group of students from the Metropolitan Data I course, taught by Hans Hoogenboom at AMS Institute. Since we don’t know our group number, we have decided to refer to ourselves as “the confused programmers” for now, given our modest coding experience.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+This website was created for the purpose of hosting and showcasing our lab results and assignments.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+We would like to invite you to explore our work and see our progress. As the course progresses, this website will closely follow our learning journey and showcase our growth.
+
+Thanks for visiting, and we hope you enjoy following along with us!
