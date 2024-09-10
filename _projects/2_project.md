@@ -12,7 +12,7 @@ related_publications: true
 
 ---
 
-For the first week of Metropolitan Data 1 we took a look at the first steps in Python
+For the first week of Metropolitan Data 1 we took a look at the first steps in Python.
 
 ### Exercise 1
 **Write a properly documented function with the following behaviour:**
@@ -21,8 +21,9 @@ For the first week of Metropolitan Data 1 we took a look at the first steps in P
 - It takes an integer that represents the length of a sequence that will be created.
 - It creates a dictionary that is empty.
 - It loops over the sequence and stores each number as the key of an entry in the dictionary, assigning either "odd" or "even" to the value, depending on the type of number.
-
 - Returns the dictionary.
+
+{% raw %}
 
 ```
 def define_even_or_odd(sequence_length):
@@ -51,7 +52,10 @@ def define_even_or_odd(sequence_length):
 
 print("list of odd and even", define_even_or_odd(100))
   ```
+  
+{% endraw %}
 ___
+
 ### Exercise 2
 **Create a tuple called `tup` with the following seven objects:**
 
@@ -60,9 +64,10 @@ ___
 - The third element is the sum of the first two elements
 - The fourth element is the difference of the first two elements
 - The fifth element is the first element divided by the second element
-
 - Display the output of `tup`.  What is the type of the variable `tup`? What happens if you try and chage an item in the tuple?
-  
+ 
+{% raw %}
+
 ```
 # Step 1: define the elements
 first_element = 64
@@ -90,15 +95,20 @@ except TypeError as e:
 # Tuples are immutable, meaning you cannot change their contents once they are created.
 # Hence, attempting to modify an item raises a TypeError.
 ``` 
+{% endraw %}
+
 ___
+
 ### Exercise 3
 **Build a list that contains every prime number between 1 and 100, in two different ways:**
     
 1. Using for loops and conditional if statements.
-
 2. **(Stretch Goal)** Using a list comprehension.  You should be able to do this in one line of code. **Hint:** it might help to look up the function `all()` in the documentation.
+
+### Way 1: Using for loops and conditional if statements.
+
+{% raw %}
 ```
-# Way 1: Using for loops and conditional if statements.
 def list_primes_one(len_seq):
 
     prime_numbers = []
@@ -112,11 +122,21 @@ def list_primes_one(len_seq):
             prime_numbers.append(i)
         
     return prime_numbers
+``` 
+{% endraw %}
 
-# Display the prime numbers list
+### Display the prime numbers list
+
+{% raw %}
+```
 print("Prime numbers (using for loop):", list_primes_one(100))
+``` 
+{% endraw %}
 
-# Way 2: Using a list comprehension.
+### Way 2: Using a list comprehension.
+
+{% raw %}
+```
 def list_primes_two(len_seq):
 
     prime_numbers = [i for i in range(2, len_seq + 1) if all(i % j != 0 for j in range(2, i))]
@@ -126,12 +146,15 @@ def list_primes_two(len_seq):
 # Display the prime numbers list
 print("Prime numbers (using list comprehension):", list_primes_two(100))
 ```
+{% endraw %}
 ___
-### Exercise 4
+
+ Exercise 4
 **Write a function to test the "prime-ness" of a number.**
     
 In Exercise 4, above, you wrote code that generated a list of the prime numbers between 1 and 100. Now, write a function called `isprime()` that takes in a positive integer $N$, and determines whether or not it is prime.  Return `True` if it's prime and return `False` if it isn't. Then, using a list comprehension and `isprime()`, create a list `myprimes` that contains all the prime numbers less than 100.  
 
+{% raw %}
 ```
 # Function to check if a number is prime
 def isprime(N):
@@ -150,18 +173,28 @@ def isprime(N):
             return False     
         
     return True
-        
-# Function to generate a list of prime numbers     
+```
+{% endraw %}
+
+
+### Function to generate a list of prime numbers
+
+{% raw %}
+```
 def list_primes_two(len_seq):
 
     myprimes = [i for i in range(2, len_seq) if isprime(i)]
 
     return myprimes
+```
+{% endraw %}
 
-# Display the prime numbers less than 100
+### Display the prime numbers less than 100
+
+{% raw %}
+```
 print("Prime numbers less than 100:", list_primes_two(100))
 ```
-{% raw %}
-
-
 {% endraw %}
+
+
