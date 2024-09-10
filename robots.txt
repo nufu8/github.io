@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nufu8.github.io/sitemap.xml
+Sitemap: https://nufu8.github.io/github.io//sitemap.xml
