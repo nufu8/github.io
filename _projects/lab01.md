@@ -30,9 +30,9 @@ ___
 
 ### Question 2
 
-**a) Save the csv file to your compluter and Load the data in Tab "TOTAL Casualties".**
-**b) Display the first 5 rows of the dataset using .head().**
-**c) Extract the column names and create a dictionary where each column name is the key, and the first value in that column is the value.**
+- **a) Save the csv file to your compluter and Load the data in Tab "TOTAL Casualties".**
+- **b) Display the first 5 rows of the dataset using .head().**
+- **c) Extract the column names and create a dictionary where each column name is the key, and the first value in that column is the value.**
 
 {% raw %}
 
@@ -66,9 +66,9 @@ print(dict)
 ___
 
 ### Question 3
-**a) Plot a histogram of any numeric column from the dataset.**
-**b) Use a kernel density plot (KDE) to visualize the distribution of another numeric column.**
-**c) Create a bar chart of a categorical variable and discuss how the plot changes if you switch to a horizontal bar plot.**
+- **a) Plot a histogram of any numeric column from the dataset.**
+- **b) Use a kernel density plot (KDE) to visualize the distribution of another numeric column.**
+- **c) Create a bar chart of a categorical variable and discuss how the plot changes if you switch to a horizontal bar plot.**
 
 **A)**
 {% raw %}
@@ -106,8 +106,8 @@ sns.displot(db_a, x="Month")
 {% include figure.liquid loading="eager" path="assets/img/2c.png" title="example image" class="img-fluid rounded z-depth-1" %}
 
 ### Question 4
-**a) Write a loop that iterates through each row of a DataFrame and prints the value of one specific column.**
-**b) Modify the loop so that it extracts rows where a numeric column value is greater than a threshold and stores these rows in a new DataFrame.**
+- **a) Write a loop that iterates through each row of a DataFrame and prints the value of one specific column.**
+- **b) Modify the loop so that it extracts rows where a numeric column value is greater than a threshold and stores these rows in a new DataFrame.**
 
 **A)**
 {% raw %}
@@ -131,10 +131,9 @@ filtered_db_a
 {% endraw %}
 
 ### Question 5
-## Question 5
-**a) Create a list containing the names "Civilians" and "Afghan forces"**
-**b) From the imported data keep the the values from these two columns only. Keep in mind that "Year" and "Month" identify each column and sould remain in the dataset.**
-**c) Obtain a monthly total count of casualties for these two groups and create a line and a bar plot of them.**
+- **a) Create a list containing the names "Civilians" and "Afghan forces"**
+- **b) From the imported data keep the the values from these two columns only. Keep in mind that "Year" and "Month" identify each column and sould remain in the dataset.**
+- **c) Obtain a monthly total count of casualties for these two groups and create a line and a bar plot of them.**
 
 **A)**
 {% raw %}
