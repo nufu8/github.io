@@ -1,68 +1,32 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Lab 00 | Metropolitan Data I </title> <meta name="author" content=" "> <meta name="description" content="MetData's very first lab: Python Basics"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/github.io/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/github.io/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/github.io/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/github.io/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://nufu8.github.io/github.io//github.io/projects/lab00/"> <script src="/github.io/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script> <link defer rel="stylesheet" href="/github.io/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>initTheme();</script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/github.io//"> Metropolitan Data I </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/github.io/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/github.io/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Lab 00</h1> <p class="post-description">MetData's very first lab: Python Basics</p> </header> <article> <p><strong>WK 1</strong></p> <hr> <p>For the first week of Metropolitan Data 1 we took a look at the first steps in Python.</p> <h3 id="exercise-1">Exercise 1</h3> <p><strong>Write a properly documented function with the following behaviour:</strong></p> <ul> <li>It has a meaningful name (i.e. it is related to its behaviour).</li> <li>It takes an integer that represents the length of a sequence that will be created.</li> <li>It creates a dictionary that is empty.</li> <li>It loops over the sequence and stores each number as the key of an entry in the dictionary, assigning either “odd” or “even” to the value, depending on the type of number.</li> <li>Returns the dictionary.</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def define_even_or_odd(sequence_length):
-    """
-    Generates a dictionary where each key is a number in a sequence from 0 to sequence_length.
-    The corresponding value is either 'odd' or 'even', depending on whether the key is odd or even.
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Lab 01 | Metropolitan Data I </title> <meta name="author" content=" "> <meta name="description" content="Lab 2: Fiddling with Pandas..."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/github.io/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/github.io/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/github.io/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/github.io/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://nufu8.github.io/github.io//github.io/projects/lab01/"> <script src="/github.io/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script> <link defer rel="stylesheet" href="/github.io/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>initTheme();</script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/github.io//"> Metropolitan Data I </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/github.io/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/github.io/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item"> <button id="search-toggle" title="Search" onclick="openSearchModal()"> <span class="nav-link">ctrl k <i class="ti ti-search"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Lab 01</h1> <p class="post-description">Lab 2: Fiddling with Pandas...</p> </header> <article> <p><strong>WK 2</strong></p> <hr> <p>For the second week of Metropolitan Data 1 we explored various Python libraries such as Pandas.</p> <h3 id="question-1">Question 1</h3> <p><strong>Write a Python code snippet using IPython.display to embed this Google Sheet directly into a Jupyter notebook for easy reference and interaction.</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from IPython.display import IFrame
 
-    Parameters:
-    sequence_length (int): The length of the sequence to generate (non-negative integer).
+IFrame("https://docs.google.com/spreadsheets/d/1EAx8_ksSCmoWW_SlhFyq2QrRn0FNNhcg1TtDFJzZRgc/edit?hl=en&amp;gid=1#gid=1", width=1000, height=500)
+</code></pre></div></div> <hr> <h3 id="question-2">Question 2</h3> <p><strong>a) Save the csv file to your compluter and Load the data in Tab “TOTAL Casualties”.</strong> <strong>b) Display the first 5 rows of the dataset using .head().</strong> <strong>c) Extract the column names and create a dictionary where each column name is the key, and the first value in that column is the value.</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import pandas as pd
 
-    Returns:
-    even_odd_dict: A dictionary with numbers as keys and 'odd' or 'even' as values.
-    """
-    if sequence_length &lt; 0:
-        raise ValueError("sequence_length must be a non-negative integer.")
-    
-    even_odd_dict = {} 
+f = "Wikileaks Afghanistan war logs analysis - TOTAL CASUALTIES, ALL CAUSES.csv"
 
-    for i in range(0, sequence_length + 1):
-        if i % 2 == 0:
-            even_odd_dict[i] = "even"
-        else:
-            even_odd_dict[i] = "odd"
+# Importing the csv file into a dataframe and resetting the header to row number 2
+df = pd.read_csv(f, header=1)
 
-    return even_odd_dict
+# Print first 5 rows
+print(df.head())
 
-print("list of odd and even", define_even_or_odd(100))
-</code></pre></div></div> <hr> <h3 id="exercise-2">Exercise 2</h3> <p><strong>Create a tuple called <code class="language-plaintext highlighter-rouge">tup</code> with the following seven objects:</strong></p> <ul> <li>The first element is an integer of your choice</li> <li>The second element is a float of your choice</li> <li>The third element is the sum of the first two elements</li> <li>The fourth element is the difference of the first two elements</li> <li>The fifth element is the first element divided by the second element</li> <li>Display the output of <code class="language-plaintext highlighter-rouge">tup</code>. What is the type of the variable <code class="language-plaintext highlighter-rouge">tup</code>? What happens if you try and chage an item in the tuple?</li> </ul> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Step 1: define the elements
-first_element = 64
-second_element = 5.0
-third_element = first_element + second_element
-fourth_element = first_element - second_element
-fifth_element = first_element / second_element
+# Extract  column names
+column_names = df.columns
 
-# Step 2: create the tuple 'tup' with all five elements
-tup = (first_element, second_element, third_element, fourth_element, fifth_element)
+# Create dictionary
+dict ={}
 
-# Step 3: display the tuple
-print("Tuple:", tup)
-# output: (64, 5.0, 69.0, 59.0, 12.8)
+# Populate dictionary
+for column in column_names:
+    firstValue = df[column].iloc[0]
+    dict[column] = firstValue
 
-# Step 4: display the type of the variable 'tup'
-print("Type of tup:", type(tup))
-
-# Step 5: trying to change an item in the tuple 
-try:
-    tup[0] = 20  
-except TypeError as e:
-    print("Error when trying to modify tuple:", e)
-
-# Tuples are immutable, meaning you cannot change their contents once they are created.
-# Hence, attempting to modify an item raises a TypeError.
-</code></pre></div></div> <hr> <h3 id="exercise-3">Exercise 3</h3> <p><strong>Build a list that contains every prime number between 1 and 100, in two different ways:</strong></p> <ol> <li>Using for loops and conditional if statements.</li> <li> <strong>(Stretch Goal)</strong> Using a list comprehension. You should be able to do this in one line of code. <strong>Hint:</strong> it might help to look up the function <code class="language-plaintext highlighter-rouge">all()</code> in the documentation.</li> </ol> <p><strong>Way 1: Using for loops and conditional if statements.</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def list_primes_one(len_seq):
-
-    prime_numbers = []
-    list_numbers = range(2, len_seq + 1)
-
-    for i in list_numbers:
-        for j in range(2, i):
-            if i % j == 0:
-                break
-        else:
-            prime_numbers.append(i)
-        
-    return prime_numbers
-</code></pre></div></div> <p><strong>Display the prime numbers list</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print("Prime numbers (using for loop):", list_primes_one(100))
-</code></pre></div></div> <p><strong>Way 2: Using a list comprehension.</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def list_primes_two(len_seq):
+# Print output
+print(dict)
+</code></pre></div></div> <hr> <h3 id="question-3">Question 3</h3> <p><strong>a) Plot a histogram of any numeric column from the dataset.</strong> <strong>b) Use a kernel density plot (KDE) to visualize the distribution of another numeric column.</strong> <strong>c) Create a bar chart of a categorical variable and discuss how the plot changes if you switch to a horizontal bar plot.</strong></p> <p><strong>A)</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># a) make a histogram from the info from columb "Taliban"
+sns.histplot(y="Taliban", data=db_a)
+</code></pre></div></div> <p><img src="assets/img/2a.png" alt="histogram"></p> <p><strong>B)</strong></p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def list_primes_two(len_seq):
 
     prime_numbers = [i for i in range(2, len_seq + 1) if all(i % j != 0 for j in range(2, i))]
 
