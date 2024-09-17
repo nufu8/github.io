@@ -78,8 +78,8 @@ sns.histplot(y="Taliban", data=db_a)
 ``` 
 {% endraw %}
 
-![histogram](projects/2a.png)
-![histogram](2a.png)
+![](assets/img/2a.png?raw=true)
+![histogram](assets/img/2a.png?raw=true)
 ![histogram](C:\Users\Stan Huynh\Personal Files\School\Master\MSc MADE\Data I\github.io\_projects\2a.png)
 
 <img src="C:\Users\Stan Huynh\Personal Files\School\Master\MSc MADE\Data I\github.io\_projects\2a.png" alt="Alt text">
