@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Lab 01"
-description: "Lab 2: Fiddling with Pandas..."
+description: "Lab 2: Fiddling with Pandas. No pandas were harmed during the making of this lab."
 img: assets/img/sad_panda.png
 importance: 2
 category: work
@@ -33,7 +33,7 @@ ___
 **a) Save the csv file to your compluter and Load the data in Tab "TOTAL Casualties".**
 **b) Display the first 5 rows of the dataset using .head().**
 **c) Extract the column names and create a dictionary where each column name is the key, and the first value in that column is the value.**
- 
+
 {% raw %}
 
 ```
@@ -79,6 +79,7 @@ sns.histplot(y="Taliban", data=db_a)
 {% endraw %}
 
 ![histogram](assets/img/2a.png)
+image: 2a.png
 
 **B)**
 
