@@ -80,6 +80,7 @@ sns.histplot(y="Taliban", data=db_a)
 
 ![histogram](assets/img/2a.png)
 image: 2a.png
+{% include figure.liquid path="assets/img/2a.png title="histogram" class="img-fluid rounded z-depth-1" %} 
 
 **B)**
 
