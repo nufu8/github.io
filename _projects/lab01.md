@@ -78,9 +78,8 @@ sns.histplot(y="Taliban", data=db_a)
 ``` 
 {% endraw %}
 
-![histogram](assets/img/2a.png)
-image: 2a.png
-{% include figure.liquid path="assets/img/2a.png title="histogram" class="img-fluid rounded z-depth-1" %} 
+![histogram](C:\Users\Stan Huynh\Personal Files\School\Master\MSc MADE\Data I\github.io\assets\img\2a.png)
+
 
 **B)**
 
