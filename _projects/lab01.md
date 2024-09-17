@@ -85,64 +85,78 @@ sns.histplot(y="Taliban", data=db_a)
 
 {% raw %}
 ```
-def list_primes_two(len_seq):
-
-    prime_numbers = [i for i in range(2, len_seq + 1) if all(i % j != 0 for j in range(2, i))]
-
-    return prime_numbers
-
-# Display the prime numbers list
-print("Prime numbers (using list comprehension):", list_primes_two(100))
+# b) make a KDE plot
+sns.kdeplot(db_a["Nato - official figures"])
 ```
 {% endraw %}
+
+{% include figure.liquid loading="eager" path="assets/img/2b.png" title="example image" class="img-fluid rounded z-depth-1" %}
 
 ___
 
-### Exercise 4
-**Write a function to test the "prime-ness" of a number.**
-    
-In Exercise 4, above, you wrote code that generated a list of the prime numbers between 1 and 100. Now, write a function called `isprime()` that takes in a positive integer $N$, and determines whether or not it is prime.  Return `True` if it's prime and return `False` if it isn't. Then, using a list comprehension and `isprime()`, create a list `myprimes` that contains all the prime numbers less than 100.  
+**C)**
 
 {% raw %}
 ```
-# Function to check if a number is prime
-def isprime(N):
-    """
-    Determines if a given positive integer N is a prime number.
-
-    Parameters:
-    N (int): The number to be checked for primality.
-
-    Returns:
-    bool: True if N is prime, False otherwise.
-    """
-
-    for i in range(2, N):
-        if N % i == 0:
-            return False     
-        
-    return True
+# c)
+sns.displot(db_a, x="Month")
 ```
 {% endraw %}
 
-**Function to generate a list of prime numbers**
+{% include figure.liquid loading="eager" path="assets/img/2c.png" title="example image" class="img-fluid rounded z-depth-1" %}
 
+### Question 4
+**a) Write a loop that iterates through each row of a DataFrame and prints the value of one specific column.**
+**b) Modify the loop so that it extracts rows where a numeric column value is greater than a threshold and stores these rows in a new DataFrame.**
+
+**A)**
 {% raw %}
 ```
-def list_primes_two(len_seq):
-
-    myprimes = [i for i in range(2, len_seq) if isprime(i)]
-
-    return myprimes
+for index, row in db_a.iterrows():
+    print(row['Civilians'])
 ```
 {% endraw %}
 
-**Display the prime numbers less than 100**
-
+**B)**
 {% raw %}
 ```
-print("Prime numbers less than 100:", list_primes_two(100))
+filtered_rows = []
+for index, row in db_a.iterrows():
+   if int(row['Civilians']) > 100:
+      filtered_rows.append(row)
+
+filtered_db_a = pd.DataFrame(filtered_rows)
+filtered_db_a
 ```
 {% endraw %}
 
+### Question 5
+## Question 5
+**a) Create a list containing the names "Civilians" and "Afghan forces"**
+**b) From the imported data keep the the values from these two columns only. Keep in mind that "Year" and "Month" identify each column and sould remain in the dataset.**
+**c) Obtain a monthly total count of casualties for these two groups and create a line and a bar plot of them.**
 
+**A)**
+{% raw %}
+```
+list_of_headers = list(db_a)
+new_list = [list_of_headers[1], list_of_headers[2]]
+new_list
+```
+{% endraw %}
+
+**B)**
+{% raw %}
+```
+db_new = db_a.drop(columns=["Taliban", "Nato (detailed in spreadsheet)", "Nato - official figures"])
+db_new["Total_Civilians_Afghan"] = db_a[new_list[0]] + db_a[new_list[1]]
+db_new
+```
+{% endraw %}
+
+**C)**
+{% raw %}
+```
+sns.displot( x="Total_Civilians_Afghan", data=db_new, hue="Year", multiple="stack")
+```
+{% endraw %}
